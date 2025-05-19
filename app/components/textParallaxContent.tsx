@@ -113,7 +113,7 @@ const ExampleContent = () => (
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
         reiciendis blanditiis aliquam aut fugit sint.
       </p>
-      <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
+      <button className="w-full dark:bg-black bg-white px-9 py-4 text-xl text-black dark:text-white transition-colors  md:w-fit">
         Learn more <FiArrowUpRight className="inline" />
       </button>
     </div>
