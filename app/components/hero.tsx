@@ -1,8 +1,7 @@
 'use client'
-
 import { motion } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
-import { squareData } from '../squareData'
+import { squareData } from '../utils/squareData'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const shuffle = (array: any[]) => {
