@@ -13,7 +13,8 @@ export const newsData: NewsItem[] = [
     date: '31',
     month: 'Jul',
     title: 'Fuga ea ullam earum assumenda, beatae labore eligendi.',
-    image: 'https://source.unsplash.com/random/245x320',
+    image:
+      'https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80',
     span: 'md:col-span-2 lg:row-span-2 lg:h-full'
   },
   {
@@ -21,14 +22,16 @@ export const newsData: NewsItem[] = [
     date: '04',
     month: 'Aug',
     title: 'Autem sunt tempora mollitia magnam non voluptates',
-    image: 'https://source.unsplash.com/random/240x320'
+    image:
+      'https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80'
   },
   {
     category: 'Health',
     date: '01',
     month: 'Aug',
     title: 'Inventore reiciendis aliquam excepturi',
-    image: 'https://source.unsplash.com/random/241x320'
+    image:
+      'https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80'
   },
   {
     category: 'Science',

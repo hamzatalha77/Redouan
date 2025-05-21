@@ -32,7 +32,7 @@ export default function Navbar() {
           href="/"
           className="text-2xl font-bold text-indigo-800 dark:text-white"
         >
-          Rdoua
+          Rdoua.
         </Link>
 
         <div className="hidden md:flex space-x-6">
