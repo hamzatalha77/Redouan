@@ -19,7 +19,7 @@ const News = () => {
             <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
               <a
                 href="#"
-                className="px-3 py-2 text-xs font-semibold tracking-wider uppercase hover:underline dark:text-gray-800 dark:bg-violet-600"
+                className="px-3 py-2 text-xs font-semibold tracking-wider uppercase hover:underline dark:text-white dark:bg-black bg-white text-black"
               >
                 {item.category}
               </a>

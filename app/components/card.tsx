@@ -11,13 +11,9 @@ export const BouncyCardsFeatures = () => {
           Grow faster with our
           <span className="text-slate-400"> all in one solution</span>
         </h2>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="whitespace-nowrap rounded-lg bg-slate-900 px-4 py-2 font-medium text-white shadow-xl transition-colors hover:bg-slate-700"
-        >
-          Learn more
-        </motion.button>
+        <button className="rounded-2xl border-2 border-dashed border-black bg-white px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+          Hover me
+        </button>
       </div>
 
       <div className="mb-4 grid grid-cols-12 gap-4">

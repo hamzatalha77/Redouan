@@ -1,7 +1,7 @@
 'use client'
 import React, { useRef, ReactNode } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { FiArrowUpRight } from 'react-icons/fi'
+// import { FiArrowUpRight } from 'react-icons/fi'
 
 const IMG_PADDING = 12
 
@@ -113,8 +113,8 @@ const ExampleContent = () => (
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
         reiciendis blanditiis aliquam aut fugit sint.
       </p>
-      <button className="w-full dark:bg-black bg-white px-9 py-4 text-xl text-black dark:text-white transition-colors  md:w-fit">
-        Learn more <FiArrowUpRight className="inline" />
+      <button className="rounded-2xl border-2 border-dashed border-black bg-white px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+        Hover me
       </button>
     </div>
   </div>
