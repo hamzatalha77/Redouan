@@ -2,6 +2,7 @@ import { useAnimate } from 'framer-motion'
 import React, { MouseEventHandler, ReactNode, useRef } from 'react'
 import { FiMousePointer } from 'react-icons/fi'
 import { squareData } from '../utils/squareData'
+import Image from 'next/image'
 
 export const Exampleimages = () => {
   return (
@@ -125,11 +126,13 @@ const MouseImageTrail = ({
       {children}
 
       {images.map((img, index) => (
-        <img
+        <Image
           className="pointer-events-none absolute left-0 top-0 h-48 w-auto rounded-xl border-2 border-black bg-neutral-900 object-cover opacity-0"
           src={img}
           alt={`Mouse move image ${index}`}
           key={index}
+          width={188}
+          height={188}
           data-mouse-move-index={index}
         />
       ))}
