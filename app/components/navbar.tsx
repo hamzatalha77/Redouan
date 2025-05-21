@@ -36,13 +36,18 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden md:flex space-x-6">
-          {['Home', 'About', 'Services', 'Contact'].map((item) => (
+          {[
+            { name: 'Home', href: '/' },
+            { name: 'About', href: '/about' },
+            { name: 'Services', href: '/services' },
+            { name: 'Contact', href: '/contact' }
+          ].map(({ name, href }) => (
             <Link
-              key={item}
-              href="/"
+              key={name}
+              href={href}
               className="nav-link text-black dark:text-white hover:text-black dark:hover:text-white transition-colors duration-300"
             >
-              {item}
+              {name}
             </Link>
           ))}
         </div>
