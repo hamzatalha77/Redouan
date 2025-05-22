@@ -2,12 +2,12 @@ import React from 'react'
 
 const error404 = () => {
   return (
-    <section className="flex items-center h-full sm:p-16 bg-gray-900 dark:bg-gray-50 text-gray-100 dark:text-gray-800">
+    <section className="flex items-center h-screen sm:p-16 bg-gray-900 dark:bg-gray-50 text-gray-100 dark:text-gray-800">
       <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8 space-y-8 text-center sm:max-w-md">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
-          className="w-40 h-40 text-gray-600 dark:text-gray-400"
+          className="w-40 h-40 text-white dark:text-black animate-bounce transition-all duration-500"
         >
           <path
             fill="currentColor"
@@ -32,13 +32,16 @@ const error404 = () => {
         <p className="text-3xl">
           Looks like our services are currently offline
         </p>
-        <a
+        <button className="px-6 py-2 font-medium bg-white dark:bg-black text-black dark:text-white w-fit transition-all shadow-[3px_3px_0px_gray] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
+          Back to homepage
+        </button>
+        {/* <a
           rel="noopener noreferrer"
           href="#"
           className="px-8 py-3 font-semibold rounded bg-violet-400 dark:bg-violet-600 text-gray-900 dark:text-gray-50"
         >
           Back to homepage
-        </a>
+        </a> */}
       </div>
     </section>
   )

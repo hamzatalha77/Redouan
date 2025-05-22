@@ -11,9 +11,11 @@ export const BouncyCardsFeatures = () => {
           Grow faster with our
           <span className="text-slate-400"> all in one solution</span>
         </h2>
-        <button className="rounded-2xl border-2 border-dashed border-black bg-white px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
-          Hover me
-        </button>
+        <div className="bg-white min-h-[200px] items-center justify-center">
+          <button className="px-6 py-2 font-medium bg-white dark:bg-black text-black dark:text-white w-fit transition-all shadow-[3px_3px_0px_gray] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
+            Hover me
+          </button>
+        </div>
       </div>
 
       <div className="mb-4 grid grid-cols-12 gap-4">

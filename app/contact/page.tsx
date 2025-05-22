@@ -1,7 +1,12 @@
 import React from 'react'
+import { RevealLinks } from '../components/revealLinks'
 
 const contact = () => {
-  return <div></div>
+  return (
+    <div>
+      <RevealLinks />
+    </div>
+  )
 }
 
 export default contact
