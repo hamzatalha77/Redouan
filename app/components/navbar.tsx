@@ -1,40 +1,16 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Menu, X, Sun, Moon } from 'lucide-react'
 import Link from 'next/link'
+import { useTheme } from 'next-themes'
 
 export default function Navbar() {
-  const [isDarkMode, setIsDarkMode] = useState<boolean | null>(null)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { theme, setTheme } = useTheme()
 
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const savedTheme = localStorage.getItem('theme')
-      const prefersDark = window.matchMedia(
-        '(prefers-color-scheme: dark)'
-      ).matches
-
-      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-        document.documentElement.classList.add('dark')
-        setIsDarkMode(true)
-      } else {
-        document.documentElement.classList.remove('dark')
-        setIsDarkMode(false)
-      }
-    }
-  }, [])
-
-  const toggleDarkMode = () => {
-    if (isDarkMode) {
-      document.documentElement.classList.remove('dark')
-      localStorage.setItem('theme', 'light')
-      setIsDarkMode(false)
-    } else {
-      document.documentElement.classList.add('dark')
-      localStorage.setItem('theme', 'dark')
-      setIsDarkMode(true)
-    }
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark')
   }
 
   return (
@@ -42,7 +18,7 @@ export default function Navbar() {
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link
           href="/"
-          className="text-2xl font-bold text-indigo-800 dark:text-white"
+          className="text-2xl font-bold text-black dark:text-white"
         >
           Rdoua.
         </Link>
@@ -61,20 +37,15 @@ export default function Navbar() {
           ))}
         </div>
 
-        {isDarkMode !== null && (
-          <div className="hidden md:flex items-center space-x-4">
-            <button
-              onClick={toggleDarkMode}
-              className="text-gray-700 dark:text-gray-200"
-            >
-              {isDarkMode ? (
-                <Sun className="w-6 h-6" />
-              ) : (
-                <Moon className="w-6 h-6" />
-              )}
-            </button>
-          </div>
-        )}
+        <div className="hidden md:flex items-center space-x-4">
+          <button onClick={toggleTheme} className="text-black dark:text-white">
+            {theme === 'dark' ? (
+              <Sun className="w-6 h-6" />
+            ) : (
+              <Moon className="w-6 h-6" />
+            )}
+          </button>
+        </div>
 
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -102,6 +73,22 @@ export default function Navbar() {
                 {name}
               </Link>
             ))}
+
+            {/* Optional: Show toggle on mobile too */}
+            <button
+              onClick={toggleTheme}
+              className="text-gray-700 dark:text-gray-200 flex items-center space-x-2"
+            >
+              {theme === 'dark' ? (
+                <>
+                  <Sun className="w-5 h-5" /> <span>Light Mode</span>
+                </>
+              ) : (
+                <>
+                  <Moon className="w-5 h-5" /> <span>Dark Mode</span>
+                </>
+              )}
+            </button>
           </div>
         </div>
       )}

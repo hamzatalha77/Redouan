@@ -32,16 +32,14 @@ export const VelocityText = () => {
   return (
     <section
       ref={targetRef}
-      className="h-[1000vh] bg-neutral-50 text-neutral-950"
+      className="h-screen bg-white text-black dark:bg-black dark:text-white"
     >
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.p
           style={{ skewX, x }}
           className="origin-bottom-left whitespace-nowrap text-5xl font-black uppercase leading-[0.85] md:text-7xl md:leading-[0.85]"
         >
-          Nothing in this world can take the place of persistence. Talent will
-          not; nothing is more common than unsuccessful men with talent. Genius
-          will not; unrewarded genius is almost
+          Nothing in this world can take the place of persistence.
         </motion.p>
       </div>
     </section>
