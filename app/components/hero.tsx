@@ -61,7 +61,7 @@ const ShuffleGrid = () => {
 
 const ShuffleHero = () => {
   return (
-    <section className="w-full px-8  py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
+    <section className="dark:bg-black bg-white w-full px-8  py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
       <div>
         <span className="block mb-4 text-xs md:text-sm text-white dark:text-black font-medium">
           Better every day
