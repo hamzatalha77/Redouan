@@ -61,9 +61,9 @@ const ShuffleGrid = () => {
 
 const ShuffleHero = () => {
   return (
-    <section className="dark:bg-black bg-white w-full px-8  py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
+    <section className=" w-full px-8  py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
       <div>
-        <span className="block mb-4 text-xs md:text-sm text-white dark:text-black font-medium">
+        <span className="block mb-4 text-xs md:text-sm text-black dark:text-white font-medium">
           Better every day
         </span>
         <h3 className="text-4xl md:text-6xl font-semibold">
@@ -73,11 +73,10 @@ const ShuffleHero = () => {
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nobis in
           error repellat voluptatibus ad.
         </p>
-        <div className="">
-          <button className="px-6 py-2 font-medium bg-white dark:bg-black text-black dark:text-white w-fit transition-all shadow-[3px_3px_0px_gray] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
-            Hover me
-          </button>
-        </div>
+
+        <button className="px-6 py-2 font-medium bg-white dark:bg-black text-black dark:text-white w-fit transition-all shadow-[3px_3px_0px_gray] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
+          Hover me
+        </button>
       </div>
       <ShuffleGrid />
     </section>
