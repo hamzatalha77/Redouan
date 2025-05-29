@@ -30,10 +30,7 @@ export const VelocityText = () => {
   const x = useSpring(xRaw, { mass: 3, stiffness: 400, damping: 50 })
 
   return (
-    <section
-      ref={targetRef}
-      className="h-screen bg-white text-black dark:bg-black dark:text-white"
-    >
+    <section ref={targetRef} className="h-screen bg-white text-black ">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.p
           style={{ skewX, x }}

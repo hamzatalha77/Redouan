@@ -24,7 +24,7 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden md:flex space-x-6">
-          {['Home', 'About', 'Services', 'Contact'].map((name) => (
+          {['Home', 'About', 'Error404', 'Contact'].map((name) => (
             <Link
               key={name}
               href={`/${
@@ -62,7 +62,7 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white dark:bg-black shadow-lg absolute w-full left-0 animate-fade-in">
           <div className="container mx-auto px-4 py-4 space-y-4">
-            {['Home', 'About', 'Services', 'Contact'].map((name) => (
+            {['Home', 'About', 'Error404', 'Contact'].map((name) => (
               <Link
                 key={name}
                 href={`/${
