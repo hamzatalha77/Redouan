@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Article = () => {
@@ -8,7 +9,9 @@ const Article = () => {
           <div className="flex justify-between items-center mb-6">
             <div className="flex w-full sm:items-center gap-x-5 sm:gap-x-3">
               <div className="shrink-0">
-                <img
+                <Image
+                  width={320}
+                  height={320}
                   className="size-12 rounded-full"
                   src="https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
                   alt="Avatar"
@@ -31,7 +34,9 @@ const Article = () => {
                           <div className="p-4 sm:p-5">
                             <div className="mb-2 flex w-full sm:items-center gap-x-5 sm:gap-x-3">
                               <div className="shrink-0">
-                                <img
+                                <Image
+                                  width={320}
+                                  height={320}
                                   className="size-8 rounded-full"
                                   src="https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
                                   alt="Avatar"
@@ -152,7 +157,9 @@ const Article = () => {
             </p>
 
             <figure>
-              <img
+              <Image
+                width={560}
+                height={420}
                 className="w-full object-cover rounded-xl"
                 src="https://images.unsplash.com/photo-1670272505340-d906d8d77d03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
                 alt="Blog Image"
@@ -193,7 +200,9 @@ const Article = () => {
             </blockquote>
 
             <figure>
-              <img
+              <Image
+                width={560}
+                height={420}
                 className="w-full object-cover rounded-xl"
                 src="https://images.unsplash.com/photo-1670272498380-eb330b61f3cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
                 alt="Blog Image"
