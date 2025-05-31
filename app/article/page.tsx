@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Example from '../components/horizontalScrollCarousel'
 
 const Article = () => {
   return (
@@ -295,7 +296,6 @@ const Article = () => {
           </div>
         </div>
       </div>
-
       <div className="sticky bottom-6 inset-x-0 text-center">
         <div className="inline-block bg-white shadow-md rounded-full py-3 px-4 dark:bg-neutral-800">
           <div className="flex items-center gap-x-1.5">
@@ -468,7 +468,8 @@ const Article = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div>{' '}
+      <Example />
     </div>
   )
 }
