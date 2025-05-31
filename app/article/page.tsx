@@ -468,7 +468,7 @@ const Article = () => {
             </div>
           </div>
         </div>
-      </div>{' '}
+      </div>
       <Example />
     </div>
   )
