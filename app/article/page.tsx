@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Example from '../components/horizontalScrollCarousel'
+import ProgressCarousel from '../components/ProgressCarousel'
 
 const Article = () => {
   return (
@@ -24,7 +24,7 @@ const Article = () => {
                   <div>
                     <div className="hs-tooltip [--trigger:hover] [--placement:bottom] inline-block">
                       <div className="hs-tooltip-toggle sm:mb-1 block text-start cursor-pointer">
-                        <span className="font-semibold text-gray-800 dark:text-neutral-200">
+                        <span className="font-semibold text-gray-800 ">
                           Leyla Ludic
                         </span>
 
@@ -45,7 +45,7 @@ const Article = () => {
                               </div>
 
                               <div className="grow">
-                                <p className="text-lg font-semibold text-gray-200 dark:text-neutral-200">
+                                <p className="text-lg font-semibold text-gray-200 ">
                                   Leyla Ludic
                                 </p>
                               </div>
@@ -60,7 +60,7 @@ const Article = () => {
                           <div className="flex justify-between items-center px-4 py-3 sm:px-5">
                             <ul className="text-xs space-x-3">
                               <li className="inline-block">
-                                <span className="font-semibold text-gray-200 dark:text-neutral-200">
+                                <span className="font-semibold text-gray-200 ">
                                   56
                                 </span>
                                 <span className="text-gray-400 dark:text-neutral-400">
@@ -68,7 +68,7 @@ const Article = () => {
                                 </span>
                               </li>
                               <li className="inline-block">
-                                <span className="font-semibold text-gray-200 dark:text-neutral-200">
+                                <span className="font-semibold text-gray-200 ">
                                   1k+
                                 </span>
                                 <span className="text-gray-400 dark:text-neutral-400">
@@ -143,7 +143,7 @@ const Article = () => {
                 Announcing a free plan for small teams
               </h2>
 
-              <p className="text-lg text-gray-800 dark:text-neutral-200">
+              <p className="text-lg text-gray-800 ">
                 At preline, our mission has always been focused on bringing
                 openness and transparency to the design process. Weve always
                 believed that by providing a space where designers can share
@@ -152,25 +152,46 @@ const Article = () => {
               </p>
             </div>
 
-            <p className="text-lg text-gray-800 dark:text-neutral-200">
+            <p className="text-lg text-gray-800 ">
               Were proud to be a part of creating a more open culture and to
               continue building a product that supports this vision.
             </p>
 
-            <figure>
-              <Image
-                width={560}
-                height={420}
-                className="w-full object-cover rounded-xl"
-                src="https://images.unsplash.com/photo-1670272505340-d906d8d77d03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
-                alt="Blog Image"
-              />
-              <figcaption className="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
-                A woman sitting at a table.
-              </figcaption>
-            </figure>
+            <div className="text-center">
+              <div className="grid lg:grid-cols-2 gap-3">
+                <div className="grid grid-cols-2 lg:grid-cols-1 gap-3">
+                  <figure className="relative w-full h-60">
+                    <Image
+                      width={360}
+                      height={240}
+                      className="size-full absolute top-0 start-0 object-cover rounded-xl"
+                      src="https://images.unsplash.com/photo-1670272505340-d906d8d77d03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+                      alt="Blog Image"
+                    />
+                  </figure>
+                  <figure className="relative w-full h-60">
+                    <Image
+                      width={360}
+                      height={240}
+                      className="size-full absolute top-0 start-0 object-cover rounded-xl"
+                      src="https://images.unsplash.com/photo-1671726203638-83742a2721a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+                      alt="Blog Image"
+                    />
+                  </figure>
+                </div>
+                <figure className="relative w-full h-72 sm:h-96 lg:h-full">
+                  <Image
+                    width={360}
+                    height={492}
+                    className="size-full absolute top-0 start-0 object-cover rounded-xl"
+                    src="https://images.unsplash.com/photo-1671726203394-491c8b574a0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+                    alt="Blog Image"
+                  />
+                </figure>
+              </div>
+            </div>
 
-            <p className="text-lg text-gray-800 dark:text-neutral-200">
+            <p className="text-lg text-gray-800 ">
               As weve grown, weve seen how Preline has helped companies such as
               Spotify, Microsoft, Airbnb, Facebook, and Intercom bring their
               designers closer together to create amazing things. Weve also
@@ -178,7 +199,7 @@ const Article = () => {
               the better teams adapt and communicate with one another.
             </p>
 
-            <p className="text-lg text-gray-800 dark:text-neutral-200">
+            <p className="text-lg text-gray-800 ">
               Thats why we are excited to share that we now have a{}
               <a
                 className="text-blue-600 decoration-2 hover:underline focus:outline-hidden focus:underline font-medium dark:text-blue-500"
@@ -191,26 +212,15 @@ const Article = () => {
             </p>
 
             <blockquote className="text-center p-4 sm:px-7">
-              <p className="text-xl font-medium text-gray-800 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal dark:text-neutral-200">
+              <p className="text-xl font-medium text-gray-800 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal ">
                 To say that switching to Preline has been life-changing is an
                 understatement. My business has tripled and I got my life back.
               </p>
-              <p className="mt-5 text-gray-800 dark:text-neutral-200">
-                Nicole Grazioso
-              </p>
+              <p className="mt-5 text-gray-800 ">Nicole Grazioso</p>
             </blockquote>
 
             <figure>
-              <Image
-                width={560}
-                height={420}
-                className="w-full object-cover rounded-xl"
-                src="https://images.unsplash.com/photo-1670272498380-eb330b61f3cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
-                alt="Blog Image"
-              />
-              <figcaption className="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
-                A man and a woman looking at a cell phone.
-              </figcaption>
+              <ProgressCarousel />
             </figure>
 
             <div className="space-y-3">
@@ -218,7 +228,7 @@ const Article = () => {
                 Bringing the culture of sharing to everyone
               </h3>
 
-              <p className="text-lg text-gray-800 dark:text-neutral-200">
+              <p className="text-lg text-gray-800 ">
                 We know the power of sharing is real, and we want to create an
                 opportunity for everyone to try Preline and explore how
                 transformative open communication can be. Now you can have a
@@ -228,7 +238,7 @@ const Article = () => {
               </p>
             </div>
 
-            <ul className="list-disc list-outside space-y-5 ps-5 text-lg text-gray-800 dark:text-neutral-200">
+            <ul className="list-disc list-outside space-y-5 ps-5 text-lg text-gray-800 ">
               <li className="ps-2">
                 Preline allows us to collaborate in real time and is a really
                 great way for leadership on the team to stay up-to-date with
@@ -256,7 +266,7 @@ const Article = () => {
               </li>
             </ul>
 
-            <p className="text-lg text-gray-800 dark:text-neutral-200">
+            <p className="text-lg text-gray-800 ">
               Small teams and individual designers need a space where they can
               watch the design process unfold, both for themselves and for the
               people they work with – no matter if its a fellow designer,
@@ -269,25 +279,25 @@ const Article = () => {
 
             <div>
               <a
-                className="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                className="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:bg-neutral-800  dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                 href="#"
               >
                 Plan
               </a>
               <a
-                className="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                className="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:bg-neutral-800  dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                 href="#"
               >
                 Web development
               </a>
               <a
-                className="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                className="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:bg-neutral-800  dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                 href="#"
               >
                 Free
               </a>
               <a
-                className="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                className="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:bg-neutral-800  dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                 href="#"
               >
                 Team
@@ -313,8 +323,8 @@ const Article = () => {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
                 </svg>
@@ -344,8 +354,8 @@ const Article = () => {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z" />
                 </svg>
@@ -379,8 +389,8 @@ const Article = () => {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
                   <polyline points="16 6 12 2 8 6" />
@@ -407,8 +417,8 @@ const Article = () => {
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
                     <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
                     <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
@@ -469,7 +479,7 @@ const Article = () => {
           </div>
         </div>
       </div>
-      <Example />
+      {/* <Example /> */}
     </div>
   )
 }

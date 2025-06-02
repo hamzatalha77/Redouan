@@ -49,3 +49,15 @@ html {
 .mobile-menu {
   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #4f46e5 !important;
+}
