@@ -24,13 +24,13 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden md:flex space-x-6">
-          {['Home', 'About', 'Error404', 'Contact'].map((name) => (
+          {['Home', 'About', 'Gallery', 'Contact'].map((name) => (
             <Link
               key={name}
               href={`/${
                 name.toLowerCase() === 'home' ? '' : name.toLowerCase()
               }`}
-              className="text-black dark:text-white hover:text-black dark:hover:text-white transition-colors duration-300"
+              className="text-black dark:text-white hover:text-black dark:hover:text-white transition-colors duration-300 uppercase"
             >
               {name}
             </Link>
@@ -62,13 +62,13 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white dark:bg-black shadow-lg absolute w-full left-0 animate-fade-in">
           <div className="container mx-auto px-4 py-4 space-y-4">
-            {['Home', 'About', 'Error404', 'Contact'].map((name) => (
+            {['Home', 'About', 'Gallery', 'Contact'].map((name) => (
               <Link
                 key={name}
                 href={`/${
                   name.toLowerCase() === 'home' ? '' : name.toLowerCase()
                 }`}
-                className="block text-black dark:text-white hover:text-black dark:hover:text-white transition-colors duration-300"
+                className="block text-black dark:text-white hover:text-black dark:hover:text-white transition-colors duration-300 uppercase"
               >
                 {name}
               </Link>

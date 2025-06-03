@@ -1,17 +1,13 @@
 'use client'
-import { DragCards } from '@/app/components/drag'
-import Example from '@/app/components/horizontalScrollCarousel'
-import React from 'react'
-import { Exampleimages } from '../components/mouseImageTrail'
-import { DrawCircleText } from '../components/drawCircleText'
+
+import AboutUs from '../components/aboutUs'
+import Path from '../components/path'
 
 const About = () => {
   return (
     <div>
-      <Example />
-      <Exampleimages />
-      <DrawCircleText />
-      <DragCards />
+      <AboutUs />
+      <Path />
     </div>
   )
 }
