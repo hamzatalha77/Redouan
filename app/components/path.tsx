@@ -9,7 +9,7 @@ const Path = () => {
           Discover Our Team
         </p>
         <p className="text-base text-gray-700 md:text-lg">
-          Sed ut unde iste natus error sit voluptatem accusantium doloremque
+          Sed ut unde iste error sit voluptatem accusantium doloremque
           laudantium.
         </p>
       </div>
