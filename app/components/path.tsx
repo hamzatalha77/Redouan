@@ -9,8 +9,7 @@ const Path = () => {
           Discover Our Team
         </p>
         <p className="text-base text-gray-700 md:text-lg">
-          Sed ut unde iste error sit voluptatem accusantium doloremque
-          laudantium.
+          Sed ut unde iste error sit voluptatem doloremque laudantium.
         </p>
       </div>
       <div className="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg">
