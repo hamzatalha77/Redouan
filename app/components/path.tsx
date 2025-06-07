@@ -84,7 +84,7 @@ const Path = () => {
             />
           </div>
           <div className="flex flex-col sm:text-center">
-            <p className="text-lg font-bold">Alice Melbourne</p>
+            <p className="text-lg font-bold">Alice Melbournes</p>
             <p className="mb-5 text-xs text-gray-800">Human Resources</p>
             <div className="flex items-center space-x-3 sm:justify-center">
               <Link
