@@ -617,7 +617,7 @@ const AboutUs = () => {
                 Who we are
               </span>
               <h2 className="mb-5 text-3xl font-bold text-dark sm:text-[40px]/[48px] ">
-                Make your customers happy by giving services.
+                Make your customers happy by giving services
               </h2>
               <p className="mb-5 text-base text-body-color text-dark-6">
                 It is a long established fact that a reader will be distracted
