@@ -25,7 +25,7 @@ const Article = () => {
                     <div className="hs-tooltip [--trigger:hover] [--placement:bottom] inline-block">
                       <div className="hs-tooltip-toggle sm:mb-1 block text-start cursor-pointer">
                         <span className="font-semibold text-gray-800 ">
-                          Leyla Ludi
+                          Leyla Lud
                         </span>
 
                         <div
