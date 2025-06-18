@@ -46,7 +46,7 @@ const Article = () => {
 
                               <div className="grow">
                                 <p className="text-lg font-semibold text-gray-200 ">
-                                  Leyla Ludic
+                                  Leyla Ludi
                                 </p>
                               </div>
                             </div>
