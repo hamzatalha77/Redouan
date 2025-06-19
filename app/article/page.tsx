@@ -53,7 +53,7 @@ const Article = () => {
                             <p className="text-sm text-gray-400 dark:text-neutral-400">
                               Leyla is a Customer Success Specialist at Preline
                               and spends her time speaking to in-house
-                              recruiters all over the
+                              recruiters all over
                             </p>
                           </div>
 
