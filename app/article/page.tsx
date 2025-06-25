@@ -52,7 +52,7 @@ const Article = () => {
                             </div>
                             <p className="text-sm text-gray-400 dark:text-neutral-400">
                               Leyla is a Customer Success Specialist at Preline
-                              and spends her time speaking to 
+                              and spends her time speaking 
                             </p>
                           </div>
 
