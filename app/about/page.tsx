@@ -1,13 +1,14 @@
 'use client'
 
+import React from 'react'
 import AboutUs from '../components/aboutUs'
 import Path from '../components/path'
 const About = () => {
   return (
-    <div>
+    <React.Fragment>
       <AboutUs />
       <Path />
-    </div>
+    </React.Fragment>
   )
 }
 
