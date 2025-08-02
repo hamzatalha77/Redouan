@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     try {
-      const response = await fetch("https://script.google.com/macros/s/XX/exec", {
+      const response = await fetch("https://script.google.com/macros/s//exec", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
